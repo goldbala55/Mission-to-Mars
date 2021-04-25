@@ -95,7 +95,7 @@ def mars_facts():
     df.columns=['Description', 'Mars', 'Earth']
     df.set_index('Description', inplace=True)
 
-    # return the df in html format
+    # return the df in html format, add bootstrap
     return  df.to_html(classes="table table-striped")
 
 if __name__ == "__main__":
