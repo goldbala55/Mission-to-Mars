@@ -9,6 +9,7 @@
           href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     />
   </head>
+  <!-- globally, got help from https://getbootstrap.com/docs/3.3/css/  -->
   <body>
     <div class="container">
       <!-- Add Jumbotron to Header -->
@@ -18,14 +19,18 @@
         <!-- chg to primary btn, make it block, active state  -->
         <p><a class="btn btn-primary btn-lg btn-block active" href="/scrape" role="button">Scrape New Data</a></p>
       </div>
-
       <!-- change Bootstrap to use xs instead of md to make text fit on more devices  -->
+      <!-- and https://www.freecodecamp.org/news/how-to-use-html-to-open-link-in-new-tab/ -->
       <!-- Add section for Mars News -->
       <div class="row" id="mars-news">
         <div class="col-xs-12">
           <div class="media">
             <div class="media-body">
-              <h2>Latest Mars News</h2>
+              <h2>Latest Mars News 
+                <small>
+                  <a href="https://redplanetscience.com" target="_blank">from RedPlanetScience.com</a>
+                </small>
+              </h2>
               <h4 class="media-heading">{{ mars.news_title }}</h4>
               <p>{{ mars.news_paragraph }}</p>
             </div>
